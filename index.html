@@ -9,8 +9,10 @@
         #container {
             display: flex;
             background-color: purple;
-            height: 700px;
-            align-items: baseline;
+            height: 400px;
+            /* flex-wrap: wrap;
+            align-content: space-around; */
+            /* align-items: baseline; */
             /* flex-direction: row; */
             /* flex-direction: row; default
             flex-wrap: wrap-reverse; default */
@@ -21,18 +23,35 @@
         #main {
             background-color: burlywood;
             padding: 20px;
-            margin: 10px;
+            margin: 20px;
             border: 1px solid darkorange;
-            width: 50px;
-            height: 50px;
+            width: 70px;
+            height: 70px;
+            
             /* height: 300px; */
             /* min-width: 200px; */
         }
-        #main:nth-child(1), #main:nth-child(3) {
-            height: 300px;
-            line-height: 40px;
+
+        /* nth-child selector */
+
+        #main:nth-child(1) {
+            /* order: 3 */
+            flex-grow: 2;
+            /* width: 200px; */
+        }
+        #main:nth-child(2) {
+            /* order: 1 */
+            flex-grow: 10;
+            /* width: 50px; */
             
         }
+        #main:nth-child(3) {
+            /* order: 2 */
+            flex-grow: 2;
+            /* width: 50px */
+            
+        }
+        
     </style>
 </head>
 <body>
@@ -40,8 +59,7 @@
         <div id='main'>1</div>
         <div id='main'>2</div>
         <div id='main'>3</div>
-        <div id='main'>4</div>
-        <div id='main'>5</div>
+        
     
     </div>
 </body>
