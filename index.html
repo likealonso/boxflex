@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            background-color: purple;
+            height: 700px;
+            align-items: baseline;
+            /* flex-direction: row; */
+            /* flex-direction: row; default
+            flex-wrap: wrap-reverse; default */
+            /* flex-flow: row wrap; */
+            /* justify-content: flex-start */
+        }
+
+        #main {
+            background-color: burlywood;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid darkorange;
+            width: 50px;
+            height: 50px;
+            /* height: 300px; */
+            /* min-width: 200px; */
+        }
+        #main:nth-child(1), #main:nth-child(3) {
+            height: 300px;
+            line-height: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <div id='main'>1</div>
+        <div id='main'>2</div>
+        <div id='main'>3</div>
+        <div id='main'>4</div>
+        <div id='main'>5</div>
+    
+    </div>
+</body>
+</html>
