@@ -10,6 +10,9 @@
             display: flex;
             background-color: purple;
             height: 400px;
+            align-items: flex-start
+            /* width: 500px; */
+
             /* flex-wrap: wrap;
             align-content: space-around; */
             /* align-items: baseline; */
@@ -25,7 +28,7 @@
             padding: 20px;
             margin: 20px;
             border: 1px solid darkorange;
-            width: 70px;
+            width: 75px;
             height: 70px;
             
             /* height: 300px; */
@@ -35,19 +38,28 @@
         /* nth-child selector */
 
         #main:nth-child(1) {
+            /*0 auto*/
+            /* flex initial is flex-grow:0, flex-shrink:1, flex basis: auto */
+            /* flex: 1 */
+            /* flex-basis: auto */
+            /* flex-shrink: 3; */
             /* order: 3 */
-            flex-grow: 2;
+            /* flex-grow: 2; */
             /* width: 200px; */
         }
         #main:nth-child(2) {
+            /* flex-shrink: 2; */
+            /* flex: 1; */
             /* order: 1 */
-            flex-grow: 10;
+            /* flex-grow: 10; */
             /* width: 50px; */
             
         }
         #main:nth-child(3) {
+            /* flex-shrink: 1; */
+            /* flex: 1; */
             /* order: 2 */
-            flex-grow: 2;
+            /* flex-grow: 2; */
             /* width: 50px */
             
         }
